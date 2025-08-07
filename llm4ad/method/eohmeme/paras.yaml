@@ -1,0 +1,8 @@
+name: EoHMeme
+max_generations: 10
+max_sample_nums: 20
+pop_size: 4
+num_evaluators: 4
+use_memetic: true
+memetic_frequency: 2
+memetic_intensity: 0.3

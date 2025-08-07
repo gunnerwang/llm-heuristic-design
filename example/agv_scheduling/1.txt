@@ -1,0 +1,450 @@
+Testing evaluation with a simple scheduler...
+
+Running instance 1/3
+Initial parts to process: 10
+DEBUG B[0]: part=0, tray=0, time=0, current=0
+DEBUG B[1]: part=0, tray=0, time=0, current=0
+DEBUG B[2]: part=0, tray=0, time=0, current=0
+DEBUG B[3]: part=0, tray=0, time=0, current=0
+DEBUG B[4]: part=0, tray=0, time=0, current=0
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: 0
+Step 0: Time 311, AGV 0 is going from A to B with part 1 tray 1
+DEBUG B[0]: part=1, tray=1, time=911, current=311
+DEBUG B[1]: part=0, tray=0, time=0, current=311
+DEBUG B[2]: part=0, tray=0, time=0, current=311
+DEBUG B[3]: part=0, tray=0, time=0, current=311
+DEBUG B[4]: part=0, tray=0, time=0, current=311
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: 0
+Parts in A: 8, B: 2, C: 0, On AGVs: 1
+Step 1: Time 933, AGV 0 is going from B to B with part 2 tray 2
+DEBUG B[0]: part=1, tray=1, time=911, current=933
+DEBUG: Action 1 valid - part finished processing at B[0]
+  Using greedy selection, result: 1
+Step 2: Time 1244, AGV 0 is going from B to A with part none tray 1
+DEBUG B[0]: part=0, tray=0, time=0, current=1244
+DEBUG B[1]: part=2, tray=2, time=1533, current=1244
+DEBUG B[2]: part=0, tray=0, time=0, current=1244
+DEBUG B[3]: part=0, tray=0, time=0, current=1244
+DEBUG B[4]: part=0, tray=0, time=0, current=1244
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: 0
+Step 3: Time 1555, AGV 0 is going from A to B with part 3 tray 1
+DEBUG B[0]: part=3, tray=1, time=2155, current=1555
+DEBUG B[1]: part=2, tray=2, time=1533, current=1555
+DEBUG: Action 1 valid - part finished processing at B[1]
+  Using greedy selection, result: 1
+Step 4: Time 1866, AGV 0 is going from B to A with part none tray 2
+DEBUG B[0]: part=3, tray=1, time=2155, current=1866
+DEBUG B[1]: part=0, tray=0, time=0, current=1866
+DEBUG B[2]: part=0, tray=0, time=0, current=1866
+DEBUG B[3]: part=0, tray=0, time=0, current=1866
+DEBUG B[4]: part=0, tray=0, time=0, current=1866
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: 0
+Step 5: Time 2177, AGV 0 is going from A to B with part 4 tray 2
+DEBUG B[0]: part=3, tray=1, time=2155, current=2177
+DEBUG: Action 1 valid - part finished processing at B[0]
+  Using greedy selection, result: 1
+Step 6: Time 2488, AGV 0 is going from B to A with part none tray 1
+DEBUG B[0]: part=0, tray=0, time=0, current=2488
+DEBUG B[1]: part=4, tray=2, time=2777, current=2488
+DEBUG B[2]: part=0, tray=0, time=0, current=2488
+DEBUG B[3]: part=0, tray=0, time=0, current=2488
+DEBUG B[4]: part=0, tray=0, time=0, current=2488
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: 0
+Step 7: Time 2799, AGV 0 is going from A to B with part 5 tray 1
+DEBUG B[0]: part=5, tray=1, time=3399, current=2799
+DEBUG B[1]: part=4, tray=2, time=2777, current=2799
+DEBUG: Action 1 valid - part finished processing at B[1]
+  Using greedy selection, result: 1
+Step 8: Time 3110, AGV 0 is going from B to A with part none tray 2
+DEBUG B[0]: part=5, tray=1, time=3399, current=3110
+DEBUG B[1]: part=0, tray=0, time=0, current=3110
+DEBUG B[2]: part=0, tray=0, time=0, current=3110
+DEBUG B[3]: part=0, tray=0, time=0, current=3110
+DEBUG B[4]: part=0, tray=0, time=0, current=3110
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: 0
+Step 9: Time 3421, AGV 0 is going from A to B with part 6 tray 2
+DEBUG B[0]: part=5, tray=1, time=3399, current=3421
+DEBUG: Action 1 valid - part finished processing at B[0]
+  Using greedy selection, result: 1
+Step 10: Time 3732, AGV 0 is going from B to A with part none tray 1
+DEBUG B[0]: part=0, tray=0, time=0, current=3732
+DEBUG B[1]: part=6, tray=2, time=4021, current=3732
+DEBUG B[2]: part=0, tray=0, time=0, current=3732
+DEBUG B[3]: part=0, tray=0, time=0, current=3732
+DEBUG B[4]: part=0, tray=0, time=0, current=3732
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: 0
+Step 11: Time 4043, AGV 0 is going from A to B with part 7 tray 1
+DEBUG B[0]: part=7, tray=1, time=4643, current=4043
+DEBUG B[1]: part=6, tray=2, time=4021, current=4043
+DEBUG: Action 1 valid - part finished processing at B[1]
+  Using greedy selection, result: 1
+Step 12: Time 4354, AGV 0 is going from B to A with part none tray 2
+DEBUG B[0]: part=7, tray=1, time=4643, current=4354
+DEBUG B[1]: part=0, tray=0, time=0, current=4354
+DEBUG B[2]: part=0, tray=0, time=0, current=4354
+DEBUG B[3]: part=0, tray=0, time=0, current=4354
+DEBUG B[4]: part=0, tray=0, time=0, current=4354
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: 0
+Step 13: Time 4665, AGV 0 is going from A to B with part 8 tray 2
+DEBUG B[0]: part=7, tray=1, time=4643, current=4665
+DEBUG: Action 1 valid - part finished processing at B[0]
+  Using greedy selection, result: 1
+Step 14: Time 4976, AGV 0 is going from B to A with part none tray 1
+DEBUG B[0]: part=0, tray=0, time=0, current=4976
+DEBUG B[1]: part=8, tray=2, time=5265, current=4976
+DEBUG B[2]: part=0, tray=0, time=0, current=4976
+DEBUG B[3]: part=0, tray=0, time=0, current=4976
+DEBUG B[4]: part=0, tray=0, time=0, current=4976
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: 0
+Step 15: Time 5287, AGV 0 is going from A to B with part 9 tray 1
+DEBUG B[0]: part=9, tray=1, time=5887, current=5287
+DEBUG B[1]: part=8, tray=2, time=5265, current=5287
+DEBUG: Action 1 valid - part finished processing at B[1]
+  Using greedy selection, result: 1
+Step 16: Time 5598, AGV 0 is going from B to A with part none tray 2
+DEBUG B[0]: part=9, tray=1, time=5887, current=5598
+DEBUG B[1]: part=0, tray=0, time=0, current=5598
+DEBUG B[2]: part=0, tray=0, time=0, current=5598
+DEBUG B[3]: part=0, tray=0, time=0, current=5598
+DEBUG B[4]: part=0, tray=0, time=0, current=5598
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: 0
+Step 17: Time 5909, AGV 0 is going from A to B with part 10 tray 2
+DEBUG B[0]: part=9, tray=1, time=5887, current=5909
+DEBUG: Action 1 valid - part finished processing at B[0]
+  Using greedy selection, result: 1
+Step 18: Time 6220, AGV 0 is going from B to A with part none tray 1
+DEBUG B[0]: part=0, tray=0, time=0, current=6220
+DEBUG B[1]: part=10, tray=2, time=6509, current=6220
+DEBUG B[2]: part=0, tray=0, time=0, current=6220
+DEBUG B[3]: part=0, tray=0, time=0, current=6220
+DEBUG B[4]: part=0, tray=0, time=0, current=6220
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: -1
+No valid action for AGV 0 at node A
+No more actions in queue at step 19. Checking if processing is complete...
+Found 1 parts still in B. Processing them manually.
+Manually processing part 10 at B[1], finish time: 6509
+Waiting until time 6509 for processing to complete
+Waiting until time 6531 for AGV 0 to be available
+AGV 0 recycled tray from B to A using action 1
+All parts fully processed, simulation complete
+Final state:
+Parts in A: 0
+Trays in A: 5
+Parts in B: 0
+Parts in C: 0
+Parts on AGVs: 0
+Parts processed: 10/10
+Final reward: -3.11
+Completion time: 6842
+Instance 1 completed successfully: processed 10/10 parts
+
+Running instance 2/3
+Initial parts to process: 10
+DEBUG B[0]: part=0, tray=0, time=0, current=0
+DEBUG B[1]: part=0, tray=0, time=0, current=0
+DEBUG B[2]: part=0, tray=0, time=0, current=0
+DEBUG B[3]: part=0, tray=0, time=0, current=0
+DEBUG B[4]: part=0, tray=0, time=0, current=0
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: 0
+Step 0: Time 311, AGV 0 is going from A to B with part 1 tray 1
+DEBUG B[0]: part=1, tray=1, time=911, current=311
+DEBUG B[1]: part=0, tray=0, time=0, current=311
+DEBUG B[2]: part=0, tray=0, time=0, current=311
+DEBUG B[3]: part=0, tray=0, time=0, current=311
+DEBUG B[4]: part=0, tray=0, time=0, current=311
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: 0
+Parts in A: 8, B: 2, C: 0, On AGVs: 1
+Step 1: Time 933, AGV 0 is going from B to B with part 2 tray 2
+DEBUG B[0]: part=1, tray=1, time=911, current=933
+DEBUG: Action 1 valid - part finished processing at B[0]
+  Using greedy selection, result: 1
+Step 2: Time 1244, AGV 0 is going from B to A with part none tray 1
+DEBUG B[0]: part=0, tray=0, time=0, current=1244
+DEBUG B[1]: part=2, tray=2, time=1533, current=1244
+DEBUG B[2]: part=0, tray=0, time=0, current=1244
+DEBUG B[3]: part=0, tray=0, time=0, current=1244
+DEBUG B[4]: part=0, tray=0, time=0, current=1244
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: 0
+Step 3: Time 1555, AGV 0 is going from A to B with part 3 tray 1
+DEBUG B[0]: part=3, tray=1, time=2155, current=1555
+DEBUG B[1]: part=2, tray=2, time=1533, current=1555
+DEBUG: Action 1 valid - part finished processing at B[1]
+  Using greedy selection, result: 1
+Step 4: Time 1866, AGV 0 is going from B to A with part none tray 2
+DEBUG B[0]: part=3, tray=1, time=2155, current=1866
+DEBUG B[1]: part=0, tray=0, time=0, current=1866
+DEBUG B[2]: part=0, tray=0, time=0, current=1866
+DEBUG B[3]: part=0, tray=0, time=0, current=1866
+DEBUG B[4]: part=0, tray=0, time=0, current=1866
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: 0
+Step 5: Time 2177, AGV 0 is going from A to B with part 4 tray 2
+DEBUG B[0]: part=3, tray=1, time=2155, current=2177
+DEBUG: Action 1 valid - part finished processing at B[0]
+  Using greedy selection, result: 1
+Step 6: Time 2488, AGV 0 is going from B to A with part none tray 1
+DEBUG B[0]: part=0, tray=0, time=0, current=2488
+DEBUG B[1]: part=4, tray=2, time=2777, current=2488
+DEBUG B[2]: part=0, tray=0, time=0, current=2488
+DEBUG B[3]: part=0, tray=0, time=0, current=2488
+DEBUG B[4]: part=0, tray=0, time=0, current=2488
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: 0
+Step 7: Time 2799, AGV 0 is going from A to B with part 5 tray 1
+DEBUG B[0]: part=5, tray=1, time=3399, current=2799
+DEBUG B[1]: part=4, tray=2, time=2777, current=2799
+DEBUG: Action 1 valid - part finished processing at B[1]
+  Using greedy selection, result: 1
+Step 8: Time 3110, AGV 0 is going from B to A with part none tray 2
+DEBUG B[0]: part=5, tray=1, time=3399, current=3110
+DEBUG B[1]: part=0, tray=0, time=0, current=3110
+DEBUG B[2]: part=0, tray=0, time=0, current=3110
+DEBUG B[3]: part=0, tray=0, time=0, current=3110
+DEBUG B[4]: part=0, tray=0, time=0, current=3110
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: 0
+Step 9: Time 3421, AGV 0 is going from A to B with part 6 tray 2
+DEBUG B[0]: part=5, tray=1, time=3399, current=3421
+DEBUG: Action 1 valid - part finished processing at B[0]
+  Using greedy selection, result: 1
+Step 10: Time 3732, AGV 0 is going from B to A with part none tray 1
+DEBUG B[0]: part=0, tray=0, time=0, current=3732
+DEBUG B[1]: part=6, tray=2, time=4021, current=3732
+DEBUG B[2]: part=0, tray=0, time=0, current=3732
+DEBUG B[3]: part=0, tray=0, time=0, current=3732
+DEBUG B[4]: part=0, tray=0, time=0, current=3732
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: 0
+Step 11: Time 4043, AGV 0 is going from A to B with part 7 tray 1
+DEBUG B[0]: part=7, tray=1, time=4643, current=4043
+DEBUG B[1]: part=6, tray=2, time=4021, current=4043
+DEBUG: Action 1 valid - part finished processing at B[1]
+  Using greedy selection, result: 1
+Step 12: Time 4354, AGV 0 is going from B to A with part none tray 2
+DEBUG B[0]: part=7, tray=1, time=4643, current=4354
+DEBUG B[1]: part=0, tray=0, time=0, current=4354
+DEBUG B[2]: part=0, tray=0, time=0, current=4354
+DEBUG B[3]: part=0, tray=0, time=0, current=4354
+DEBUG B[4]: part=0, tray=0, time=0, current=4354
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: 0
+Step 13: Time 4665, AGV 0 is going from A to B with part 8 tray 2
+DEBUG B[0]: part=7, tray=1, time=4643, current=4665
+DEBUG: Action 1 valid - part finished processing at B[0]
+  Using greedy selection, result: 1
+Step 14: Time 4976, AGV 0 is going from B to A with part none tray 1
+DEBUG B[0]: part=0, tray=0, time=0, current=4976
+DEBUG B[1]: part=8, tray=2, time=5265, current=4976
+DEBUG B[2]: part=0, tray=0, time=0, current=4976
+DEBUG B[3]: part=0, tray=0, time=0, current=4976
+DEBUG B[4]: part=0, tray=0, time=0, current=4976
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: 0
+Step 15: Time 5287, AGV 0 is going from A to B with part 9 tray 1
+DEBUG B[0]: part=9, tray=1, time=5887, current=5287
+DEBUG B[1]: part=8, tray=2, time=5265, current=5287
+DEBUG: Action 1 valid - part finished processing at B[1]
+  Using greedy selection, result: 1
+Step 16: Time 5598, AGV 0 is going from B to A with part none tray 2
+DEBUG B[0]: part=9, tray=1, time=5887, current=5598
+DEBUG B[1]: part=0, tray=0, time=0, current=5598
+DEBUG B[2]: part=0, tray=0, time=0, current=5598
+DEBUG B[3]: part=0, tray=0, time=0, current=5598
+DEBUG B[4]: part=0, tray=0, time=0, current=5598
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: 0
+Step 17: Time 5909, AGV 0 is going from A to B with part 10 tray 2
+DEBUG B[0]: part=9, tray=1, time=5887, current=5909
+DEBUG: Action 1 valid - part finished processing at B[0]
+  Using greedy selection, result: 1
+Step 18: Time 6220, AGV 0 is going from B to A with part none tray 1
+DEBUG B[0]: part=0, tray=0, time=0, current=6220
+DEBUG B[1]: part=10, tray=2, time=6509, current=6220
+DEBUG B[2]: part=0, tray=0, time=0, current=6220
+DEBUG B[3]: part=0, tray=0, time=0, current=6220
+DEBUG B[4]: part=0, tray=0, time=0, current=6220
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: -1
+No valid action for AGV 0 at node A
+No more actions in queue at step 19. Checking if processing is complete...
+Found 1 parts still in B. Processing them manually.
+Manually processing part 10 at B[1], finish time: 6509
+Waiting until time 6509 for processing to complete
+Waiting until time 6531 for AGV 0 to be available
+AGV 0 recycled tray from B to A using action 1
+All parts fully processed, simulation complete
+Final state:
+Parts in A: 0
+Trays in A: 5
+Parts in B: 0
+Parts in C: 0
+Parts on AGVs: 0
+Parts processed: 10/10
+Final reward: -3.11
+Completion time: 6842
+Instance 2 completed successfully: processed 10/10 parts
+
+Running instance 3/3
+Initial parts to process: 10
+DEBUG B[0]: part=0, tray=0, time=0, current=0
+DEBUG B[1]: part=0, tray=0, time=0, current=0
+DEBUG B[2]: part=0, tray=0, time=0, current=0
+DEBUG B[3]: part=0, tray=0, time=0, current=0
+DEBUG B[4]: part=0, tray=0, time=0, current=0
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: 0
+Step 0: Time 311, AGV 0 is going from A to B with part 1 tray 1
+DEBUG B[0]: part=1, tray=1, time=911, current=311
+DEBUG B[1]: part=0, tray=0, time=0, current=311
+DEBUG B[2]: part=0, tray=0, time=0, current=311
+DEBUG B[3]: part=0, tray=0, time=0, current=311
+DEBUG B[4]: part=0, tray=0, time=0, current=311
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: 0
+Parts in A: 8, B: 2, C: 0, On AGVs: 1
+Step 1: Time 933, AGV 0 is going from B to B with part 2 tray 2
+DEBUG B[0]: part=1, tray=1, time=911, current=933
+DEBUG: Action 1 valid - part finished processing at B[0]
+  Using greedy selection, result: 1
+Step 2: Time 1244, AGV 0 is going from B to A with part none tray 1
+DEBUG B[0]: part=0, tray=0, time=0, current=1244
+DEBUG B[1]: part=2, tray=2, time=1533, current=1244
+DEBUG B[2]: part=0, tray=0, time=0, current=1244
+DEBUG B[3]: part=0, tray=0, time=0, current=1244
+DEBUG B[4]: part=0, tray=0, time=0, current=1244
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: 0
+Step 3: Time 1555, AGV 0 is going from A to B with part 3 tray 1
+DEBUG B[0]: part=3, tray=1, time=2155, current=1555
+DEBUG B[1]: part=2, tray=2, time=1533, current=1555
+DEBUG: Action 1 valid - part finished processing at B[1]
+  Using greedy selection, result: 1
+Step 4: Time 1866, AGV 0 is going from B to A with part none tray 2
+DEBUG B[0]: part=3, tray=1, time=2155, current=1866
+DEBUG B[1]: part=0, tray=0, time=0, current=1866
+DEBUG B[2]: part=0, tray=0, time=0, current=1866
+DEBUG B[3]: part=0, tray=0, time=0, current=1866
+DEBUG B[4]: part=0, tray=0, time=0, current=1866
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: 0
+Step 5: Time 2177, AGV 0 is going from A to B with part 4 tray 2
+DEBUG B[0]: part=3, tray=1, time=2155, current=2177
+DEBUG: Action 1 valid - part finished processing at B[0]
+  Using greedy selection, result: 1
+Step 6: Time 2488, AGV 0 is going from B to A with part none tray 1
+DEBUG B[0]: part=0, tray=0, time=0, current=2488
+DEBUG B[1]: part=4, tray=2, time=2777, current=2488
+DEBUG B[2]: part=0, tray=0, time=0, current=2488
+DEBUG B[3]: part=0, tray=0, time=0, current=2488
+DEBUG B[4]: part=0, tray=0, time=0, current=2488
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: 0
+Step 7: Time 2799, AGV 0 is going from A to B with part 5 tray 1
+DEBUG B[0]: part=5, tray=1, time=3399, current=2799
+DEBUG B[1]: part=4, tray=2, time=2777, current=2799
+DEBUG: Action 1 valid - part finished processing at B[1]
+  Using greedy selection, result: 1
+Step 8: Time 3110, AGV 0 is going from B to A with part none tray 2
+DEBUG B[0]: part=5, tray=1, time=3399, current=3110
+DEBUG B[1]: part=0, tray=0, time=0, current=3110
+DEBUG B[2]: part=0, tray=0, time=0, current=3110
+DEBUG B[3]: part=0, tray=0, time=0, current=3110
+DEBUG B[4]: part=0, tray=0, time=0, current=3110
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: 0
+Step 9: Time 3421, AGV 0 is going from A to B with part 6 tray 2
+DEBUG B[0]: part=5, tray=1, time=3399, current=3421
+DEBUG: Action 1 valid - part finished processing at B[0]
+  Using greedy selection, result: 1
+Step 10: Time 3732, AGV 0 is going from B to A with part none tray 1
+DEBUG B[0]: part=0, tray=0, time=0, current=3732
+DEBUG B[1]: part=6, tray=2, time=4021, current=3732
+DEBUG B[2]: part=0, tray=0, time=0, current=3732
+DEBUG B[3]: part=0, tray=0, time=0, current=3732
+DEBUG B[4]: part=0, tray=0, time=0, current=3732
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: 0
+Step 11: Time 4043, AGV 0 is going from A to B with part 7 tray 1
+DEBUG B[0]: part=7, tray=1, time=4643, current=4043
+DEBUG B[1]: part=6, tray=2, time=4021, current=4043
+DEBUG: Action 1 valid - part finished processing at B[1]
+  Using greedy selection, result: 1
+Step 12: Time 4354, AGV 0 is going from B to A with part none tray 2
+DEBUG B[0]: part=7, tray=1, time=4643, current=4354
+DEBUG B[1]: part=0, tray=0, time=0, current=4354
+DEBUG B[2]: part=0, tray=0, time=0, current=4354
+DEBUG B[3]: part=0, tray=0, time=0, current=4354
+DEBUG B[4]: part=0, tray=0, time=0, current=4354
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: 0
+Step 13: Time 4665, AGV 0 is going from A to B with part 8 tray 2
+DEBUG B[0]: part=7, tray=1, time=4643, current=4665
+DEBUG: Action 1 valid - part finished processing at B[0]
+  Using greedy selection, result: 1
+Step 14: Time 4976, AGV 0 is going from B to A with part none tray 1
+DEBUG B[0]: part=0, tray=0, time=0, current=4976
+DEBUG B[1]: part=8, tray=2, time=5265, current=4976
+DEBUG B[2]: part=0, tray=0, time=0, current=4976
+DEBUG B[3]: part=0, tray=0, time=0, current=4976
+DEBUG B[4]: part=0, tray=0, time=0, current=4976
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: 0
+Step 15: Time 5287, AGV 0 is going from A to B with part 9 tray 1
+DEBUG B[0]: part=9, tray=1, time=5887, current=5287
+DEBUG B[1]: part=8, tray=2, time=5265, current=5287
+DEBUG: Action 1 valid - part finished processing at B[1]
+  Using greedy selection, result: 1
+Step 16: Time 5598, AGV 0 is going from B to A with part none tray 2
+DEBUG B[0]: part=9, tray=1, time=5887, current=5598
+DEBUG B[1]: part=0, tray=0, time=0, current=5598
+DEBUG B[2]: part=0, tray=0, time=0, current=5598
+DEBUG B[3]: part=0, tray=0, time=0, current=5598
+DEBUG B[4]: part=0, tray=0, time=0, current=5598
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: 0
+Step 17: Time 5909, AGV 0 is going from A to B with part 10 tray 2
+DEBUG B[0]: part=9, tray=1, time=5887, current=5909
+DEBUG: Action 1 valid - part finished processing at B[0]
+  Using greedy selection, result: 1
+Step 18: Time 6220, AGV 0 is going from B to A with part none tray 1
+DEBUG B[0]: part=0, tray=0, time=0, current=6220
+DEBUG B[1]: part=10, tray=2, time=6509, current=6220
+DEBUG B[2]: part=0, tray=0, time=0, current=6220
+DEBUG B[3]: part=0, tray=0, time=0, current=6220
+DEBUG B[4]: part=0, tray=0, time=0, current=6220
+DEBUG: Action 1 invalid - no recyclable trays found at B
+  Using greedy selection, result: -1
+No valid action for AGV 0 at node A
+No more actions in queue at step 19. Checking if processing is complete...
+Found 1 parts still in B. Processing them manually.
+Manually processing part 10 at B[1], finish time: 6509
+Waiting until time 6509 for processing to complete
+Waiting until time 6531 for AGV 0 to be available
+AGV 0 recycled tray from B to A using action 1
+All parts fully processed, simulation complete
+Final state:
+Parts in A: 0
+Trays in A: 5
+Parts in B: 0
+Parts in C: 0
+Parts on AGVs: 0
+Parts processed: 10/10
+Final reward: -3.11
+Completion time: 6842
+Instance 3 completed successfully: processed 10/10 parts
+Average completion time across 3 instances: 6842.0
+Test score with simple scheduler: -6842.0
